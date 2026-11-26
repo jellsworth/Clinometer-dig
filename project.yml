@@ -1,0 +1,29 @@
+# Fallback only. The committed Clinometer.xcodeproj should open directly in
+# Xcode 16+. If it ever won't, regenerate it with:
+#   brew install xcodegen && xcodegen
+name: Clinometer
+options:
+  deploymentTarget:
+    iOS: "18.0"
+targets:
+  Clinometer:
+    type: application
+    platform: iOS
+    sources: [Clinometer]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: dev.trailtools.Clinometer
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: 1
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        INFOPLIST_KEY_CFBundleDisplayName: Clinometer
+        INFOPLIST_KEY_NSCameraUsageDescription: The camera is used as a sighting scope to aim at your target.
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIRequiresFullScreen: YES
+        INFOPLIST_KEY_UIStatusBarHidden: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
