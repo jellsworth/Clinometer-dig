@@ -84,8 +84,11 @@ struct ClinometerView: View {
                     .font(.footnote)
                     .foregroundStyle(Theme.label)
                     .multilineTextAlignment(.center)
-                    .frame(maxWidth: 260)
+                    .frame(maxWidth: 200)
             }
+            // Shift content left so it doesn't overlap the scale drum
+            // (112pt wide + 12pt trailing padding = ~124pt from right edge).
+            .padding(.trailing, 128)
             .offset(y: -140)
         }
     }
